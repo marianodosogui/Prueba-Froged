@@ -1,0 +1,30 @@
+<div class="derecha" >
+
+  <div *ngFor="let personaje of personajes" >
+    <app-ui-card>
+      <ng-container role="header">
+        {{personaje.name}}
+      </ng-container>
+
+      <p>
+        Año de nacimiento: {{personaje.birth_year}}
+      </p>
+      <p>
+        Altura: {{personaje.height}}
+      </p>
+      <p>
+        Peso: {{personaje.mass}}
+      </p>
+
+      <ng-container role="botones">
+        <app-ui-button color="rosa" disable="" >
+          Boton 1
+        </app-ui-button>
+        <app-ui-button color="azul" disable="" >
+          Boton 1
+        </app-ui-button>
+      </ng-container>
+    </app-ui-card>
+    
+  </div>
+</div>

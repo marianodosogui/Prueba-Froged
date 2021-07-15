@@ -1,0 +1,30 @@
+<div class="derecha">
+
+    <div *ngFor="let planeta of planetas" >
+      <app-ui-card>
+        <ng-container role="header">
+          {{planeta.name}}
+        </ng-container>
+  
+        <p>
+          Gravedad: {{planeta.gravity}}
+        </p>
+        <p>
+          Clima: {{planeta.climate}}
+        </p>
+        <p>
+          Terreno: {{planeta.terrain}}
+        </p>
+  
+        <ng-container role="botones">
+          <app-ui-button color="rosa" disable="" >
+            Boton 1
+          </app-ui-button>
+          <app-ui-button color="azul" disable="" >
+            Boton 1
+          </app-ui-button>
+        </ng-container>
+      </app-ui-card>
+      
+    </div>
+  </div>

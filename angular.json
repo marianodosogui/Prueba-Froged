@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "Button"
+  "defaultProject": "Button",
+  "cli": {
+    "analytics": false
+  }
 }

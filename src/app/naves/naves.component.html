@@ -1,0 +1,30 @@
+<div class="derecha">
+
+    <div *ngFor="let nave of naves" >
+      <app-ui-card>
+        <ng-container role="header">
+          {{nave.name}}
+        </ng-container>
+  
+        <p>
+          Modelo: {{nave.model}}
+        </p>
+        <p>
+          Numero pasajeros: {{nave.passengers}}
+        </p>
+        <p>
+          Hiperimpulsor: {{nave.hyperdrive_rating}}
+        </p>
+  
+        <ng-container role="botones">
+          <app-ui-button color="rosa" disable="" >
+            Boton 1
+          </app-ui-button>
+          <app-ui-button color="azul" disable="" >
+            Boton 1
+          </app-ui-button>
+        </ng-container>
+      </app-ui-card>
+      
+    </div>
+  </div>
